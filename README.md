@@ -6,8 +6,8 @@ Working through these algorithms helps me understand the idea behind them. Also,
 Based on this knowledge I'm mastering concepts behind the more advanced architectures, like gradient boostings, neural networks and so on.
 
 Jupyter Notebooks:
-1. [K-nearest neighbors](https://nbviewer.org/github/Extremesarova/experiments/blob/main/ml_from_scratch/knn/knn_iris.ipynb)
-2. [Linear Regression](https://nbviewer.org/github/Extremesarova/experiments/blob/main/ml_from_scratch/linear_regression/regression.ipynb)
+1. [K-nearest neighbors](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/knn/knn_iris.ipynb)
+2. [Linear Regression](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/linear_regression/regression.ipynb)
 
 ### Resources:
  - [Machine Learning in Action](https://www.manning.com/books/machine-learning-in-action) by Peter Harrington
