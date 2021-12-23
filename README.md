@@ -8,10 +8,11 @@ Based on this knowledge I'm mastering concepts behind the more advanced architec
 Jupyter Notebooks:
 1. [K-nearest neighbors](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/knn/knn_iris.ipynb)
 2. [Linear Regression](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/linear_regression/regression.ipynb)
+3. [Decision Trees](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/decision_trees/decision_trees.ipynb)
 
 ### Resources:
+ - [MLcourse.ai](https://mlcourse.ai/)
  - [Machine Learning in Action](https://www.manning.com/books/machine-learning-in-action) by Peter Harrington
  - [Scikit-Learn documentation](https://scikit-learn.org/stable/)
  - [StatQuest videos](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw)
- - [MLcourse.ai](https://mlcourse.ai/)
  - ...
