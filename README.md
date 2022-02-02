@@ -8,7 +8,7 @@ Jupyter Notebooks:
 1. [K-nearest neighbors](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/knn/knn_iris.ipynb)
 2. [Linear Regression](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/linear_regression/regression.ipynb)
 3. [Decision Trees](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/decision_trees/decision_trees.ipynb)
-4. [SVM](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/svd/svd.ipynb)
+4. [SVD](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/svd/svd.ipynb)
 
 ### Resources:
  - [MLcourse.ai](https://mlcourse.ai/)

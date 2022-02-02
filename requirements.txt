@@ -9,3 +9,6 @@ jupyterlab==3.2.5
 ipykernel==6.6.0
 jupyterlab-spellchecker==0.7.2
 pydotplus==2.0.2
+jupyterlab_code_formatter
+black
+isort
