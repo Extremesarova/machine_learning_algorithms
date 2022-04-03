@@ -6,10 +6,13 @@ The code was not designed to be used in production (poorly documented, has no un
 
 ## Jupyter Notebooks
 
-1. [K-nearest neighbors](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/knn/knn_iris.ipynb)
-2. [Linear Regression](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/linear_regression/regression.ipynb)
-3. [Decision Trees](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/decision_trees/decision_trees.ipynb)
-4. [SVD](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/svd/svd.ipynb)
+1. [K-nearest neighbors](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/knn/knn_iris.ipynb) `implementation`
+2. [Linear Regression](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/linear_regression/regression.ipynb) `implementation`
+3. [Decision Trees](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/decision_trees/decision_trees.ipynb) `investigation`
+4. Dimensionality reduction
+   1. [SVD](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/svd/svd.ipynb) `investigation`
+5. Clustering
+   1. [K-Means implementation](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/k-means/k_means.ipynb) `implementation`
 
 ## Resources
 
