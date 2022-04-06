@@ -1,5 +1,5 @@
 import numpy as np
-from numpy import power, sum, abs, sqrt, count_nonzero
+from numpy import power, sum, abs, count_nonzero
 
 
 class KNearestNeighborsClassifier:
@@ -12,29 +12,50 @@ class KNearestNeighborsClassifier:
         self.X = X
         self.y = y
 
-    def _predict_one_example(self, X):
-        distance = 0
+        return self
+
+    def _get_manhattan_distance(self, diff):
+        self.p = 1
+        return self._get_minkowski_distance(diff)
+
+    def _get_euclidean_distance(self, diff):
+        self.p = 2
+        return self._get_minkowski_distance(diff)
+
+    def _get_minkowski_distance(self, diff):
+        return power(sum(power(abs(diff), self.p), axis=1), (1 / self.p))
+
+    def _get_distances(self, X):
         diff = self.X - X
-        if self.metric == 'euclidean':
-            distance = get_euclidean_distance(diff)
-        elif self.metric == 'minkowski':
-            distance = get_minkowski_distance(diff, self.p)
-        sorted_dist_arg = distance.argsort()[:self.n_neighbors]
+        if self.metric == "euclidean":
+            distance = self._get_euclidean_distance(diff)
+        elif self.metric == "minkowski":
+            distance = self._get_minkowski_distance(diff)
+        elif self.metric == "manhattan":
+            distance = self._get_manhattan_distance(diff)
+        else:
+            raise NotImplementedError("Please, use 'euclidean' or 'minkowski' distance")
+        return distance
+
+    def _predict_one_shot(self, X):
+        distances = self._get_distances(X)
+
+        sorted_dist_arg = distances.argsort()[:self.n_neighbors]
         labels_vote = self.y[sorted_dist_arg]
         vote_dict = {key: count_nonzero(labels_vote == key) for key in np.unique(self.y)}
         vote_dict_sorted = sorted(vote_dict.items(), key=lambda item: item[1], reverse=True)
+
         return vote_dict_sorted[0][0]
 
+    def _predict_proba_one_shot(self, X):
+        distances = self._get_distances(X)
+
+        sorted_dist_arg = distances.argsort()[:self.n_neighbors]
+        labels_vote = self.y[sorted_dist_arg]
+        return [count_nonzero(labels_vote == key) / len(labels_vote) for key in np.unique(self.y)]
+
     def predict(self, X):
-        out = []
-        for x in X:
-            out.append(self._predict_one_example(x))
-        return np.array(out)
+        return np.array([self._predict_one_shot(x) for x in X])
 
-
-def get_euclidean_distance(diff):
-    return sqrt(sum(power(diff, 2), axis=1))
-
-
-def get_minkowski_distance(diff, p):
-    return power(sum(power(abs(diff), p), axis=1), (1 / p))
+    def predict_proba(self, X):
+        return np.array([self._predict_proba_one_shot(x) for x in X])
