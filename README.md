@@ -18,6 +18,7 @@ The code was not designed to be used in production (poorly documented, has no un
 
 - [MLcourse.ai](https://mlcourse.ai/)
 - [Machine Learning in Action](https://www.manning.com/books/machine-learning-in-action) by Peter Harrington
+- [Machine Learning with PyTorch and Scikit-Learn](https://sebastianraschka.com/blog/2022/ml-pytorch-book.html) by Sebastian Raschka
 - [Scikit-Learn documentation](https://scikit-learn.org/stable/)
 - [StatQuest videos](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw)
 - ...
