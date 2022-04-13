@@ -11,6 +11,7 @@ The code was not designed to be used in production (poorly documented, has no un
 3. [Decision Trees](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/decision_trees/decision_trees.ipynb) `investigation`
 4. Dimensionality reduction
    1. [SVD](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/svd/svd.ipynb) `investigation`
+   2. [PCA](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/pca/pca.ipynb) `implementation`
 5. Clustering
    1. [K-Means implementation](https://nbviewer.org/github/Extremesarova/machine_learning_algorithms/blob/main/k-means/k_means.ipynb) `implementation`
 
